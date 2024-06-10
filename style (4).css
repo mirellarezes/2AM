@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input{
+    font: 400 16px "Roboto", sans-serif;
+}
+
+.main-cabecalho{
+    background-image: url(Design\ sem\ nome.png);
+    background-position: 50% 39%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav{
+    width: 100%;
+
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 16px;
+}
+
+.cabecalho-lista-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.nav-item{
+    list-style-type: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.nav-item:hover{
+    color: rgba(255, 255, 255, o.8);
+}
+
+.nav-item a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+hr{
+    width: 100%;
+}
+
+.pocao-titulo-grande{
+    font-size: 54px;
+}
+
+.main-sessao{
+    padding: 40px 0 64px; 
+}
+
+.container{
+    max-width: 680px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.container-normal-sessao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-left: 158px;
+}
+
+.sessao-titulo{
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.sessao-descricao{
+    color: #777;
+}
+
+.main-footer{
+    background-color: #2a8494;
+    padding: 16px 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pocao-titulo-medio{
+    font-size: 26px;
+}
+
+.pocao-titulo{
+    font-family: "Rock Salt", cursive;
+    color: #fff;
+}
+
+.normal-sessao + .normal-sessao{
+    margin-top: 80px;
+}
+
+.produtos-container{
+    margin-bottom: 120px;
+    width: 200px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    display: flex;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.pocao-produto{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.produto-titulo{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.produto-imagem{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produto-preco-container{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.produto-preco{
+    margin-right: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+.botao-hover-fundo{
+    background-color: #2a8494;
+    color: var(--white);
+    border: 2px solid var(#2a8494);
+    border-radius: 6px;
+    padding: 4px 2px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.botao-hover-fundo:hover{
+    background-color: transparent;
+    color: var(--white);
+}
+
+.carrinho-table{
+    width: 100%
+}
+
+.table-head-item{
+    text-align: start;
+    border-bottom: 1px solid #959595;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.segunda-col, .terceira-col{
+    width: 26%;
+    border-collapse: collapse;
+}
+
+.produtos-container-carrinho{
+    display: none;
+    align-items: center;
+    gap:5vw;
+    margin-bottom:2vh;
+}
+.produtos-container-carrinho img {
+    width:10vw;
+    height:10vw;
+}
+
+.carrinho-produto td{
+    padding: 8px 0;
+    display: none;
+}
+
+.produto-identificado{
+    display: flex;
+    align-items: center;
+}
+
+.carrinho-produto-imagem{
+    width: 120px;
+    height: 70px;
+}
+
+.carrinho-produto-titulo{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+.carrinho-produto-preco{
+    font-family: "Raleway", sans-serif;
+}
+
+.produto-quantidade-input{
+    width: 40px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid #56c5db;
+    text-align: center;
+    background-color: #eee;
+}
+
+.remover-produto-botao{
+    margin-left: 12px;
+    background-color: #2a8494;
+    color: var(--white);
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+.remover-produto-botao:hover{
+    filter: brightness(0.8);
+    
+}
+
+.carrinho-total-container{
+    border-top: 1px solid #959595;
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+}
+
+.carrinho-total-container strong{
+    margin-right: 12px;
+}
+
+.comprar-botao{
+    display: flex;
+    margin: 24px auto 0;
+    background-color: #56c5db;
+    color: var(--white);
+    border: 0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.comprar-botao:hover{
+    filter: brightness(0.8);
+}
+
+.hidden {
+    display: none;
+}
+

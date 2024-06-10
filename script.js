@@ -1,17 +1,24 @@
-function clearDisplay() {
-    document.forms['mf'].elements['result'].value = '';
-}
+// for (let i = 0; i < localStorage.length; i++) {
+//     let key = localStorage.key(i);
+//     let value = localStorage.getItem(key);
 
-function appendToDisplay(value) {
-    document.forms['mf'].elements['result'].value += value;
-}
+//     if (value) {
+//         let element = document.getElementById(value);
+//         if (element) {
+//             element.style.display = "flex";
+//         }
+//     }
+// }
 
-function calculateResult() {
-    try {
-        const expression = document.forms['mf'].elements['result'].value.replace(/x/g, '*');
-        
-        document.forms['mf'].elements['result'].value = eval(expression);
-    } catch (e) {
-        document.forms['mf'].elements['result'].value = 'Erro';
-    }
-}
+// CALCULA TOTAL
+// const textototal = document.getElementById("total")
+
+// let total = 0;
+
+// for (let i=0; i < localStorage.length; i++) {
+//     total += 29.99
+// }
+
+// textototal.textContent="R$"+total
+
+// localStorage.setItem("total", total)
